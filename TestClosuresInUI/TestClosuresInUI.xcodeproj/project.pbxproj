@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		868C1CBF2470502000556E22 /* TectClosuresInUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TectClosuresInUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		868C1CBF2470502000556E22 /* TestClosuresInUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestClosuresInUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868C1CC22470502000556E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868C1CC62470502000556E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		868C1CC92470502000556E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		868C1CB62470502000556E22 = {
 			isa = PBXGroup;
 			children = (
-				868C1CC12470502000556E22 /* TectClosuresInUI */,
+				868C1CC12470502000556E22 /* TestClosuresInUI */,
 				868C1CC02470502000556E22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		868C1CC02470502000556E22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				868C1CBF2470502000556E22 /* TectClosuresInUI.app */,
+				868C1CBF2470502000556E22 /* TestClosuresInUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		868C1CC12470502000556E22 /* TectClosuresInUI */ = {
+		868C1CC12470502000556E22 /* TestClosuresInUI */ = {
 			isa = PBXGroup;
 			children = (
 				868C1CC22470502000556E22 /* AppDelegate.swift */,
@@ -66,7 +66,7 @@
 				868C1CCD2470502200556E22 /* LaunchScreen.storyboard */,
 				868C1CD02470502200556E22 /* Info.plist */,
 			);
-			path = TectClosuresInUI;
+			path = TestClosuresInUI;
 			sourceTree = "<group>";
 		};
 		868C1CDA2470536600556E22 /* Cell */ = {
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		868C1CBE2470502000556E22 /* TectClosuresInUI */ = {
+		868C1CBE2470502000556E22 /* TestClosuresInUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 868C1CD32470502200556E22 /* Build configuration list for PBXNativeTarget "TectClosuresInUI" */;
+			buildConfigurationList = 868C1CD32470502200556E22 /* Build configuration list for PBXNativeTarget "TestClosuresInUI" */;
 			buildPhases = (
 				868C1CBB2470502000556E22 /* Sources */,
 				868C1CBC2470502000556E22 /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = TectClosuresInUI;
+			name = TestClosuresInUI;
 			productName = TectClosuresInUI;
-			productReference = 868C1CBF2470502000556E22 /* TectClosuresInUI.app */;
+			productReference = 868C1CBF2470502000556E22 /* TestClosuresInUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 868C1CBA2470502000556E22 /* Build configuration list for PBXProject "TectClosuresInUI" */;
+			buildConfigurationList = 868C1CBA2470502000556E22 /* Build configuration list for PBXProject "TestClosuresInUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				868C1CBE2470502000556E22 /* TectClosuresInUI */,
+				868C1CBE2470502000556E22 /* TestClosuresInUI */,
 			);
 		};
 /* End PBXProject section */
@@ -298,13 +298,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA46VNKRBQ;
-				INFOPLIST_FILE = TectClosuresInUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestClosuresInUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demidova.TectClosuresInUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestClosuresInUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,13 +316,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA46VNKRBQ;
-				INFOPLIST_FILE = TectClosuresInUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestClosuresInUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demidova.TectClosuresInUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TestClosuresInUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		868C1CBA2470502000556E22 /* Build configuration list for PBXProject "TectClosuresInUI" */ = {
+		868C1CBA2470502000556E22 /* Build configuration list for PBXProject "TestClosuresInUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				868C1CD12470502200556E22 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		868C1CD32470502200556E22 /* Build configuration list for PBXNativeTarget "TectClosuresInUI" */ = {
+		868C1CD32470502200556E22 /* Build configuration list for PBXNativeTarget "TestClosuresInUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				868C1CD42470502200556E22 /* Debug */,

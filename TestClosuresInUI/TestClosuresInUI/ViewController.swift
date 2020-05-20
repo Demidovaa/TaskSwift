@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TectClosuresInUI
+//  TestClosuresInUI
 //
 //  Created by Анастасия Демидова on 16.05.2020.
 //  Copyright © 2020 AnastasiaDemidova. All rights reserved.
