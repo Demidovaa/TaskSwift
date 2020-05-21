@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
-//  TouchID
+//  LocalAuth.swift
+//  FaceID
 //
-//  Created by Анастасия Демидова on 19.04.2020.
+//  Created by Анастасия Демидова on 22.05.2020.
 //  Copyright © 2020 AnastasiaDemidova. All rights reserved.
 //
 
@@ -12,7 +12,6 @@ import LocalAuthentication
 public protocol LocalAuthDelegate {
     func pass()
     func fail()
-    func noSupported()
 }
 
 open class LocalAuth: NSObject {
@@ -22,9 +21,9 @@ open class LocalAuth: NSObject {
     open func checkAuthentication() {
         let context = LAContext()
         var error: NSError?
-        var description: String!
+        var description: String?
         
-        // Touch ID・Face ID
+        // MARK: -Touch ID/Face ID
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             switch context.biometryType {
             case .faceID:
@@ -36,26 +35,21 @@ open class LocalAuth: NSObject {
             case .none:
                 description = "Your device not support face/touch id"
                 break
-            @unknown default:
-                fatalError()
             }
             
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: description, reply: {success, evaluateError in
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   localizedReason: description ?? "",
+                                   reply: {success, evaluateError in
                 if (success) {
                     DispatchQueue.main.async {
-                        //Pass
                         self.delegate.pass()
                     }
                 } else {
                     DispatchQueue.main.async {
-                        //Fail
                         self.delegate.fail()
                     }
                 }
             })
-        } else {
-            // Touch ID・Face ID not supported
-            self.delegate.noSupported()
-        }
+        } 
     }
 }
